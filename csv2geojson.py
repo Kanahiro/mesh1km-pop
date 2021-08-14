@@ -3,11 +3,9 @@ import glob
 import zipfile
 import json
 from functools import lru_cache
-from concurrent.futures import ProcessPoolExecutor
 
 import pandas as pd
 import jismesh.utils as ju
-import tqdm
 
 to_meshpoint = lru_cache(10)(ju.to_meshpoint)
 
